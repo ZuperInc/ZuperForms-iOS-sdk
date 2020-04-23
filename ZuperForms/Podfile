@@ -1,0 +1,43 @@
+platform :ios, '11.0'
+use_frameworks!
+
+workspace 'ZuperForms'
+project 'ZuperFormsExample/ZuperFormsExample.xcodeproj'
+project 'ZuperFormsSdk/ZuperFormsSdk.xcodeproj'
+
+# ignore all warnings from all pods
+inhibit_all_warnings!
+
+
+
+#App target needs sdk pods also
+target 'ZuperFormsExample' do
+  project 'ZuperFormsExample/ZuperFormsExample.xcodeproj'
+  pod 'SNHttpRequest'
+  pod 'IQKeyboardManagerSwift'
+  pod 'NVActivityIndicatorView'
+  pod 'EmptyStateKit'
+end
+
+target 'ZuperFormsSdk' do
+  project 'ZuperFormsSdk/ZuperFormsSdk.xcodeproj'
+ pod 'SNHttpRequest'
+ pod 'IQKeyboardManagerSwift'
+ pod 'NVActivityIndicatorView'
+ pod 'EmptyStateKit'
+end
+
+
+
+ENV["COCOAPODS_DISABLE_STATS"] = "true"
+
+
+post_install do |installer|
+      installer.pods_project.build_configurations.each do |config|
+        if config.name == 'Release'
+          config.build_settings['SWIFT_OPTIMIZATION_LEVEL'] = '-Owholemodule'
+        else
+          config.build_settings['SWIFT_OPTIMIZATION_LEVEL'] = '-Onone'
+        end
+      end
+    end
