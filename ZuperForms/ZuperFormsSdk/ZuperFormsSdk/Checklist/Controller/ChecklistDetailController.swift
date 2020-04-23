@@ -63,7 +63,7 @@ class ChecklistDetailController: UIViewController {
     var emptyStateImg: String!
     var attachmentArray:[AttachmentModel] = []
     var checkListDetailObj: CheckListDetailViewModel!
-    var checklistId:String = EMPTY
+    var checklistId:String?
     
     override func viewDidLoad() {
         super.viewDidLoad()

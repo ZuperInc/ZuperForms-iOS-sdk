@@ -133,8 +133,6 @@ struct Services {
     /// Submit Checklist
     func submitChecklist(url:String,postData: [String:Any],completion: @escaping ResponseDict)
     {
-        let urlValue = url
-        
         RequestService.postRequest(url: url, token: getAccesToken(), authType: .bearerToken, postData: postData, method: .post, encoding: .none) { (response) in
             switch response {
             case .ApiError(let apiError):
@@ -194,7 +192,7 @@ struct Services {
         body.append("--\(boundary)--\r\n".data(using: String.Encoding.utf8)!)
         request.httpBody = body as Data
         
-        var session = URLSession(configuration: .default)
+        let session = URLSession(configuration: .default)
         var task = URLSessionDataTask()
         
         DispatchQueue.global(qos: DispatchQoS.QoSClass.default).async {

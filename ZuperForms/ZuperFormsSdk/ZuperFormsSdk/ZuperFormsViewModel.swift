@@ -28,11 +28,11 @@ class ZuperFormsViewModel {
     
     func setUpViews()
     {
-        if let accessToken = getAccesToken(){
+        if getAccesToken() != nil{
         //Get CompanyConfig Details
             
         ///If checklistId is not empty, then open the checklist directly
-            if checklistUid != EMPTY
+            if checklistUid != EMPTY && checklistUid != EMPTY && checklistUid != nil
             {
                 navigateToChecklistDetail()
             }
@@ -102,7 +102,7 @@ class ZuperFormsViewModel {
                 case .Success(let responseData):
                     if responseData != nil
                     {
-                        print(responseData ?? nil)
+                        print(responseData ?? nil ?? EMPTY)
                     }
                     
                 case .ApiError( let apiError):
