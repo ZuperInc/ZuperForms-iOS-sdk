@@ -192,7 +192,7 @@ class LoginViewModel
     
     func setNavigation()
     {
-        if loginVC.checklistId != EMPTY
+        if checklistUid != nil && checklistUid != EMPTY
         {
             navigateToChecklistDetail()
         }
@@ -228,7 +228,6 @@ class LoginViewModel
         let myBundle = Bundle(for: ChecklistDetailController.self)
                let storyBoard = UIStoryboard(name: StoryBoardName.Checklist, bundle: myBundle)
                let vc = storyBoard.instantiateViewController(withIdentifier: ViewcontrollerIdentifier.ChecklistDetailController) as! ChecklistDetailController
-        vc.checklistId = self.loginVC.checklistId
                DispatchQueue.main.async {
                    self.loginVC.dismiss(animated: false) {
                        let nav = UINavigationController(rootViewController: vc)

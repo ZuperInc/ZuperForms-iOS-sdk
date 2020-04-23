@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "ZuperForms"
-  spec.version      = "1.0.1"
+  spec.version      = "1.0.2"
   spec.summary      = "ZuperForms was built for the purpose of ensuring safety against COVID-19 by maintaining the proper checklist."
 
   # This description is used to generate tags and improve search results.

@@ -63,11 +63,9 @@ class ChecklistDetailController: UIViewController {
     var emptyStateImg: String!
     var attachmentArray:[AttachmentModel] = []
     var checkListDetailObj: CheckListDetailViewModel!
-    var checklistId:String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = checklist.checklistName ?? EMPTY
         checkListDetailObj = CheckListDetailViewModel(vc:self)
         checkListDetailObj.setDefaults()
         // Do any additional setup after loading the view.

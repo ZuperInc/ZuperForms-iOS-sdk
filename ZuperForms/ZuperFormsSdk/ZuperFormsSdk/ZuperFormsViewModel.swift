@@ -28,11 +28,11 @@ class ZuperFormsViewModel {
     
     func setUpViews()
     {
-        if getAccesToken() != nil{
+        if let accessToken = getAccesToken(){
         //Get CompanyConfig Details
             
         ///If checklistId is not empty, then open the checklist directly
-            if checklistUid != EMPTY && checklistUid != EMPTY && checklistUid != nil
+            if checklistUid != EMPTY && checklistUid != nil
             {
                 navigateToChecklistDetail()
             }
@@ -102,7 +102,7 @@ class ZuperFormsViewModel {
                 case .Success(let responseData):
                     if responseData != nil
                     {
-                        print(responseData ?? nil ?? EMPTY)
+                        print(responseData ?? nil)
                     }
                     
                 case .ApiError( let apiError):
@@ -132,7 +132,6 @@ class ZuperFormsViewModel {
         self.vc.dismiss(animated: false) {
             let loginVc = LoginController()
             loginVc.delegate = self.vc.delegate
-            loginVc.checklistId = checklistUid
             self.vc.delegate.present(loginVc, animated: true, completion: nil)
         }
         }
@@ -165,7 +164,6 @@ class ZuperFormsViewModel {
         let myBundle = Bundle(for: ChecklistDetailController.self)
         let storyBoard = UIStoryboard(name: StoryBoardName.Checklist, bundle: myBundle)
         let vc = storyBoard.instantiateViewController(withIdentifier: ViewcontrollerIdentifier.ChecklistDetailController) as! ChecklistDetailController
-        vc.checklistId = checklistUid
         DispatchQueue.main.async {
             self.vc.dismiss(animated: false) {
                 let nav = UINavigationController(rootViewController: vc)

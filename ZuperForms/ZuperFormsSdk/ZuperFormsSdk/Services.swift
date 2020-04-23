@@ -130,9 +130,39 @@ struct Services {
         
     }
     
+    /// Get Checklist Detail
+    func getChecklistDetail(checklistUid: String, completion: @escaping ChecklistDataCompletion)
+    {
+        let urlValue = endpoint + ApiPath.checklists + ApiPath.filterChecklist + checklistUid
+        
+        RequestService.getRequest(url: urlValue, token: getAccesToken() , authType: .bearerToken) { (response) in
+            switch response {
+                
+            case .ApiError(let apiError):
+                completion(.ApiError(apiError))
+            case .Success(let json):
+                //6 parsing the Json response
+                if let jsonData = try? JSONSerialization.data(withJSONObject: json)
+                {
+                    let checklistResponse = try! JSONDecoder().decode(ChecklistData.self, from: jsonData)
+                    completion(.Success(checklistResponse))
+                }
+                else
+                {
+                    completion(.Error(.jsonParsingFailure))
+                }
+            case .Error(_):
+                completion(.Error(.jsonConversionFailure))
+                return
+            }
+        }
+        
+    }
     /// Submit Checklist
     func submitChecklist(url:String,postData: [String:Any],completion: @escaping ResponseDict)
     {
+        let urlValue = url
+        
         RequestService.postRequest(url: url, token: getAccesToken(), authType: .bearerToken, postData: postData, method: .post, encoding: .none) { (response) in
             switch response {
             case .ApiError(let apiError):
@@ -192,7 +222,7 @@ struct Services {
         body.append("--\(boundary)--\r\n".data(using: String.Encoding.utf8)!)
         request.httpBody = body as Data
         
-        let session = URLSession(configuration: .default)
+        var session = URLSession(configuration: .default)
         var task = URLSessionDataTask()
         
         DispatchQueue.global(qos: DispatchQoS.QoSClass.default).async {
@@ -305,4 +335,5 @@ public enum ZuperEnvironments : String {
     static var checklists = "/company/checklist"
     static var imageUpload = "/upload?attachment_type="
     static var submitChecklist = "/user/checklist"
+    static var filterChecklist = "?filter.checklist_uid="
 }

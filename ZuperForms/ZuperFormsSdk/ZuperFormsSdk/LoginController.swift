@@ -71,7 +71,6 @@ class LoginController: UIViewController {
     var emptyStateTitle: String!
     var emptyStateMsg: String!
     var emptyStateImg: String!
-    var checklistId:String = EMPTY
     
     public init() {
         super.init(nibName: xibNames.loginController, bundle: Bundle(for: LoginController.self))

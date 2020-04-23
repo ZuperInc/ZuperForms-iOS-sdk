@@ -29,13 +29,19 @@ class CheckListDetailViewModel{
     func setDefaults()
     {
         self.setEmptyStateView()
-        self.vc.checklistQuestions = self.vc.checklist.checklistQuestions ?? []
         self.vc.view.backgroundColor = ZuperFormsTheme.backgroundColor
         self.vc.tableView.estimatedRowHeight = 100
         self.vc.tableView.estimatedSectionHeaderHeight = 100
         registerNibs()
-        setPreNextButtons()
-        setFieldOptions()
+        if checklistUid != nil && checklistUid != EMPTY {
+            getChecklistDetails()
+        }
+        else {
+            self.vc.title = self.vc.checklist.checklistName ?? EMPTY
+           self.vc.checklistQuestions = self.vc.checklist.checklistQuestions ?? []
+            setPreNextButtons()
+            setFieldOptions()
+        }
     }
     
     
@@ -331,6 +337,59 @@ class CheckListDetailViewModel{
             }
         }
     }
+    
+    /// Get checklist details by checklistId
+    func getChecklistDetails()
+    {
+        if isUserOnline(){
+            
+            showCommonLoader()
+            
+            Services.shared.getChecklistDetail(checklistUid: checklistUid, completion: { (apiResponse) in
+                removeActivityIndicator()
+                switch apiResponse
+                {
+                case .Success(let checklistData):
+                    if checklistData != nil
+                    {
+                        if let checklists = checklistData?.data
+                        {
+                            if checklists.count > 0 {
+                                self.vc.checklist = checklists[0]
+                                self.vc.checklistQuestions = self.vc.checklist.checklistQuestions ?? []
+                                self.vc.title = self.vc.checklist.checklistName ?? EMPTY
+                                self.setPreNextButtons()
+                                self.setFieldOptions()
+                                self.vc.tableView.reloadData()
+                                
+                            }
+                            else{
+                                self.vc.emptyStateMsg = ""
+                                self.vc.emptyStateTitle = emptyStateMessage
+                                self.vc.emptyStateImg = "Box"
+                                self.vc.view.emptyState.show(MainState.errorMessage)
+                            }
+                        }
+                    }
+                case .ApiError(let apiError):
+                    self.vc.emptyStateMsg = message
+                    self.vc.emptyStateTitle = errorTitle
+                    self.vc.emptyStateImg = "icon-issue"
+                    self.vc.view.emptyState.show(MainState.errorMessage)
+                    if let message = apiError[message] as? String
+                    {
+                        AlertView.showAlertView(title: errorTitle, message: message,viewController: self.vc)
+                    }
+                    
+                case .Error( _):
+                    self.vc.view.emptyState.show(MainState.somethingWrong)
+                }
+            })
+        }
+        else{
+            vc.view.emptyState.show(MainState.noInternet)
+        }
+    }
 }
 
 
@@ -454,18 +513,26 @@ extension ChecklistDetailController:  DocumentDelegate,AttachmentDelegate,ImageM
 extension ChecklistDetailController: UITableViewDelegate, UITableViewDataSource
 {
     func numberOfSections(in tableView: UITableView) -> Int {
+        if checklistQuestions.count > 0
+        {
         return 1
+        }
+        return 0
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        /// If type is RADIO,CHECKBOX ,DROPDOWN count is the number of fieldOPtions
-        if checklistQuestions[self.currentIndex].fieldType == ChecklistQuestionType.radio || checklistQuestions[self.currentIndex].fieldType == ChecklistQuestionType.checkBox || checklistQuestions[self.currentIndex].fieldType == ChecklistQuestionType.dropDown
+        if checklistQuestions.count > 0
         {
-            return checklistQuestions[self.currentIndex].optionsList.count
+            /// If type is RADIO,CHECKBOX ,DROPDOWN count is the number of fieldOPtions
+            if checklistQuestions[self.currentIndex].fieldType == ChecklistQuestionType.radio || checklistQuestions[self.currentIndex].fieldType == ChecklistQuestionType.checkBox || checklistQuestions[self.currentIndex].fieldType == ChecklistQuestionType.dropDown
+            {
+                return checklistQuestions[self.currentIndex].optionsList.count
+            }
+            /// Others count - 1
+            return 1
         }
-        /// Others count - 1
-        return 1
+        return 0
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
