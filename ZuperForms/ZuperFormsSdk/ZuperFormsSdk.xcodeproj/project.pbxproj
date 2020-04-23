@@ -1,0 +1,709 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		180AA975244F174B0045C02E /* CheckListDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180AA974244F174A0045C02E /* CheckListDetailViewModel.swift */; };
+		18129484245174AB00364C5A /* tick.gif in Resources */ = {isa = PBXBuildFile; fileRef = 18129483245174AB00364C5A /* tick.gif */; };
+		181294862451754800364C5A /* SuccessController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181294852451754800364C5A /* SuccessController.swift */; };
+		1812948A245183AC00364C5A /* Layer 16.png in Resources */ = {isa = PBXBuildFile; fileRef = 18129489245183AC00364C5A /* Layer 16.png */; };
+		1834C1E3244E94600057C90E /* MainState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1834C1E2244E94600057C90E /* MainState.swift */; };
+		1834C1E5244E957E0057C90E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1834C1E4244E957E0057C90E /* Assets.xcassets */; };
+		18527A10244BFA39007344A1 /* ChecklistDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18527A0F244BFA39007344A1 /* ChecklistDetailController.swift */; };
+		18677D57244F6AC3004EA35B /* ImageCropperController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18677D56244F6AC3004EA35B /* ImageCropperController.swift */; };
+		18677D5A244F6B5E004EA35B /* ImageCropperViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18677D59244F6B5E004EA35B /* ImageCropperViewModel.swift */; };
+		186FEFCC244C418B00FDF511 /* SingleTextFieldCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 186FEFCB244C418B00FDF511 /* SingleTextFieldCell.xib */; };
+		186FEFCF244C435400FDF511 /* SingleTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186FEFCE244C435400FDF511 /* SingleTextFieldCell.swift */; };
+		186FEFD1244C43FF00FDF511 /* MultilineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186FEFD0244C43FF00FDF511 /* MultilineCell.swift */; };
+		186FEFD3244C441F00FDF511 /* MultilineCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 186FEFD2244C441F00FDF511 /* MultilineCell.xib */; };
+		186FEFD5244C443B00FDF511 /* RadioTypeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 186FEFD4244C443B00FDF511 /* RadioTypeCell.xib */; };
+		186FEFD7244C446300FDF511 /* RadioTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186FEFD6244C446300FDF511 /* RadioTypeCell.swift */; };
+		186FEFD9244C449400FDF511 /* CheckBoxTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186FEFD8244C449400FDF511 /* CheckBoxTypeCell.swift */; };
+		186FEFDB244C44CB00FDF511 /* CheckBoxTypeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 186FEFDA244C44CB00FDF511 /* CheckBoxTypeCell.xib */; };
+		186FEFDD244C44F300FDF511 /* QuestionTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186FEFDC244C44F300FDF511 /* QuestionTypeCell.swift */; };
+		186FEFDF244C451000FDF511 /* QuestionTypeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 186FEFDE244C451000FDF511 /* QuestionTypeCell.xib */; };
+		188356D8244DC8320007911E /* FormDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188356D7244DC8320007911E /* FormDetails.swift */; };
+		18B60B2D244AEC97001284F3 /* ZuperFormsSdk.h in Headers */ = {isa = PBXBuildFile; fileRef = 18B60B2B244AEC97001284F3 /* ZuperFormsSdk.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		18B60B7A244AEEEE001284F3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B60B72244AEEEE001284F3 /* Extensions.swift */; };
+		18B60B7B244AEEEE001284F3 /* Srings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B60B73244AEEEE001284F3 /* Srings.swift */; };
+		18B60B7C244AEEEE001284F3 /* Checklist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B60B75244AEEEE001284F3 /* Checklist.swift */; };
+		18B60B7D244AEEEE001284F3 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B60B76244AEEEE001284F3 /* Login.swift */; };
+		18B60B7E244AEEEE001284F3 /* CompanyConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B60B77244AEEEE001284F3 /* CompanyConfig.swift */; };
+		18B60B7F244AEEEE001284F3 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B60B79244AEEEE001284F3 /* Services.swift */; };
+		18B60B83244AEF0B001284F3 /* LoginController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B60B80244AEF0B001284F3 /* LoginController.xib */; };
+		18B60B84244AEF0B001284F3 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B60B81244AEF0B001284F3 /* LoginViewModel.swift */; };
+		18B60B85244AEF0B001284F3 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B60B82244AEF0B001284F3 /* LoginController.swift */; };
+		18B60B88244AEF16001284F3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B60B86244AEF16001284F3 /* Constants.swift */; };
+		18B60B89244AEF16001284F3 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B60B87244AEF16001284F3 /* Functions.swift */; };
+		18B60B8F244AF2FC001284F3 /* ZuperForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B60B8D244AF2FC001284F3 /* ZuperForm.swift */; };
+		18B60B90244AF2FC001284F3 /* ZuperForm.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B60B8E244AF2FC001284F3 /* ZuperForm.xib */; };
+		18B60B92244AF3DC001284F3 /* ZuperFormsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B60B91244AF3DC001284F3 /* ZuperFormsViewModel.swift */; };
+		18B60B94244AFBD3001284F3 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B60B93244AFBD3001284F3 /* Reachability.swift */; };
+		18B60B96244B019E001284F3 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B60B95244B019E001284F3 /* AlertView.swift */; };
+		18B60B9E244B4474001284F3 /* SectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B60B9D244B4474001284F3 /* SectionCell.swift */; };
+		18B60BA0244B448F001284F3 /* SectionListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B60B9F244B448F001284F3 /* SectionListViewModel.swift */; };
+		18B60BA3244B44BA001284F3 /* SectionListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B60BA2244B44BA001284F3 /* SectionListController.swift */; };
+		18B60BA5244B44D7001284F3 /* Checklist.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18B60BA4244B44D7001284F3 /* Checklist.storyboard */; };
+		18B60BA7244B44E6001284F3 /* SectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B60BA6244B44E6001284F3 /* SectionCell.xib */; };
+		18F594A6244EDED3005716DC /* ImageTypeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18F594A5244EDED3005716DC /* ImageTypeCell.xib */; };
+		18F594A8244EDF13005716DC /* ImageTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F594A7244EDF13005716DC /* ImageTypeCell.swift */; };
+		18F594AF244F62E1005716DC /* MediaLibrary.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F594AE244F62E1005716DC /* MediaLibrary.storyboard */; };
+		18F594B1244F6384005716DC /* AttachmentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F594B0244F6384005716DC /* AttachmentModel.swift */; };
+		18F594B3244F63CF005716DC /* Library.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F594B2244F63CF005716DC /* Library.swift */; };
+		18F594B5244F660B005716DC /* LibraryFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F594B4244F660B005716DC /* LibraryFunctions.swift */; };
+		18F594B7244F6862005716DC /* ImageMarkUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F594B6244F6862005716DC /* ImageMarkUpViewController.swift */; };
+		B18122F2C8F08650D6AB137A /* Pods_ZuperFormsSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FDD823D90267768ED1C1D5F /* Pods_ZuperFormsSdk.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		12201E62AB9BD365F6F5B12B /* Pods-ZuperFormsSdk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZuperFormsSdk.release.xcconfig"; path = "Target Support Files/Pods-ZuperFormsSdk/Pods-ZuperFormsSdk.release.xcconfig"; sourceTree = "<group>"; };
+		180AA974244F174A0045C02E /* CheckListDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckListDetailViewModel.swift; sourceTree = "<group>"; };
+		18129483245174AB00364C5A /* tick.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = tick.gif; sourceTree = "<group>"; };
+		181294852451754800364C5A /* SuccessController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessController.swift; sourceTree = "<group>"; };
+		18129489245183AC00364C5A /* Layer 16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Layer 16.png"; sourceTree = "<group>"; };
+		1834C1E2244E94600057C90E /* MainState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainState.swift; sourceTree = "<group>"; };
+		1834C1E4244E957E0057C90E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18527A0F244BFA39007344A1 /* ChecklistDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistDetailController.swift; sourceTree = "<group>"; };
+		18677D56244F6AC3004EA35B /* ImageCropperController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCropperController.swift; sourceTree = "<group>"; };
+		18677D59244F6B5E004EA35B /* ImageCropperViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCropperViewModel.swift; sourceTree = "<group>"; };
+		186FEFCB244C418B00FDF511 /* SingleTextFieldCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SingleTextFieldCell.xib; sourceTree = "<group>"; };
+		186FEFCE244C435400FDF511 /* SingleTextFieldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleTextFieldCell.swift; sourceTree = "<group>"; };
+		186FEFD0244C43FF00FDF511 /* MultilineCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultilineCell.swift; sourceTree = "<group>"; };
+		186FEFD2244C441F00FDF511 /* MultilineCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MultilineCell.xib; sourceTree = "<group>"; };
+		186FEFD4244C443B00FDF511 /* RadioTypeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RadioTypeCell.xib; sourceTree = "<group>"; };
+		186FEFD6244C446300FDF511 /* RadioTypeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioTypeCell.swift; sourceTree = "<group>"; };
+		186FEFD8244C449400FDF511 /* CheckBoxTypeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxTypeCell.swift; sourceTree = "<group>"; };
+		186FEFDA244C44CB00FDF511 /* CheckBoxTypeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckBoxTypeCell.xib; sourceTree = "<group>"; };
+		186FEFDC244C44F300FDF511 /* QuestionTypeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionTypeCell.swift; sourceTree = "<group>"; };
+		186FEFDE244C451000FDF511 /* QuestionTypeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionTypeCell.xib; sourceTree = "<group>"; };
+		188356D7244DC8320007911E /* FormDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormDetails.swift; sourceTree = "<group>"; };
+		18B60B28244AEC97001284F3 /* ZuperFormsSdk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZuperFormsSdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		18B60B2B244AEC97001284F3 /* ZuperFormsSdk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZuperFormsSdk.h; sourceTree = "<group>"; };
+		18B60B2C244AEC97001284F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18B60B72244AEEEE001284F3 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		18B60B73244AEEEE001284F3 /* Srings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Srings.swift; sourceTree = "<group>"; };
+		18B60B75244AEEEE001284F3 /* Checklist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Checklist.swift; sourceTree = "<group>"; };
+		18B60B76244AEEEE001284F3 /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		18B60B77244AEEEE001284F3 /* CompanyConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyConfig.swift; sourceTree = "<group>"; };
+		18B60B79244AEEEE001284F3 /* Services.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
+		18B60B80244AEF0B001284F3 /* LoginController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginController.xib; sourceTree = "<group>"; };
+		18B60B81244AEF0B001284F3 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		18B60B82244AEF0B001284F3 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		18B60B86244AEF16001284F3 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		18B60B87244AEF16001284F3 /* Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
+		18B60B8D244AF2FC001284F3 /* ZuperForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZuperForm.swift; sourceTree = "<group>"; };
+		18B60B8E244AF2FC001284F3 /* ZuperForm.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZuperForm.xib; sourceTree = "<group>"; };
+		18B60B91244AF3DC001284F3 /* ZuperFormsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZuperFormsViewModel.swift; sourceTree = "<group>"; };
+		18B60B93244AFBD3001284F3 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		18B60B95244B019E001284F3 /* AlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		18B60B9D244B4474001284F3 /* SectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionCell.swift; sourceTree = "<group>"; };
+		18B60B9F244B448F001284F3 /* SectionListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionListViewModel.swift; sourceTree = "<group>"; };
+		18B60BA2244B44BA001284F3 /* SectionListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionListController.swift; sourceTree = "<group>"; };
+		18B60BA4244B44D7001284F3 /* Checklist.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Checklist.storyboard; sourceTree = "<group>"; };
+		18B60BA6244B44E6001284F3 /* SectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SectionCell.xib; sourceTree = "<group>"; };
+		18F594A5244EDED3005716DC /* ImageTypeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageTypeCell.xib; sourceTree = "<group>"; };
+		18F594A7244EDF13005716DC /* ImageTypeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTypeCell.swift; sourceTree = "<group>"; };
+		18F594AE244F62E1005716DC /* MediaLibrary.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MediaLibrary.storyboard; sourceTree = "<group>"; };
+		18F594B0244F6384005716DC /* AttachmentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachmentModel.swift; sourceTree = "<group>"; };
+		18F594B2244F63CF005716DC /* Library.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Library.swift; sourceTree = "<group>"; };
+		18F594B4244F660B005716DC /* LibraryFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryFunctions.swift; sourceTree = "<group>"; };
+		18F594B6244F6862005716DC /* ImageMarkUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageMarkUpViewController.swift; sourceTree = "<group>"; };
+		6FDD823D90267768ED1C1D5F /* Pods_ZuperFormsSdk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZuperFormsSdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA1EADC73ADC0C0928CFC8FA /* Pods-ZuperFormsSdk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZuperFormsSdk.debug.xcconfig"; path = "Target Support Files/Pods-ZuperFormsSdk/Pods-ZuperFormsSdk.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18B60B25244AEC97001284F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B18122F2C8F08650D6AB137A /* Pods_ZuperFormsSdk.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1834C1E1244E94600057C90E /* EmptyState */ = {
+			isa = PBXGroup;
+			children = (
+				1834C1E2244E94600057C90E /* MainState.swift */,
+			);
+			path = EmptyState;
+			sourceTree = "<group>";
+		};
+		18677D58244F6B41004EA35B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				18677D59244F6B5E004EA35B /* ImageCropperViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		186FEFCA244C40FA00FDF511 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				18B60BA6244B44E6001284F3 /* SectionCell.xib */,
+				186FEFCB244C418B00FDF511 /* SingleTextFieldCell.xib */,
+				186FEFD4244C443B00FDF511 /* RadioTypeCell.xib */,
+				186FEFD2244C441F00FDF511 /* MultilineCell.xib */,
+				186FEFDA244C44CB00FDF511 /* CheckBoxTypeCell.xib */,
+				186FEFDE244C451000FDF511 /* QuestionTypeCell.xib */,
+				18F594A5244EDED3005716DC /* ImageTypeCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		186FEFCD244C431100FDF511 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				18B60B9D244B4474001284F3 /* SectionCell.swift */,
+				186FEFCE244C435400FDF511 /* SingleTextFieldCell.swift */,
+				186FEFD0244C43FF00FDF511 /* MultilineCell.swift */,
+				186FEFD6244C446300FDF511 /* RadioTypeCell.swift */,
+				186FEFD8244C449400FDF511 /* CheckBoxTypeCell.swift */,
+				186FEFDC244C44F300FDF511 /* QuestionTypeCell.swift */,
+				18F594A7244EDF13005716DC /* ImageTypeCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		18B60B1E244AEC97001284F3 = {
+			isa = PBXGroup;
+			children = (
+				18B60B2A244AEC97001284F3 /* ZuperFormsSdk */,
+				18B60B29244AEC97001284F3 /* Products */,
+				7C4CDC80B4CA2E2DC0ADA3BA /* Pods */,
+				5E32C9AE0D85F880BF4F7BAA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		18B60B29244AEC97001284F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18B60B28244AEC97001284F3 /* ZuperFormsSdk.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18B60B2A244AEC97001284F3 /* ZuperFormsSdk */ = {
+			isa = PBXGroup;
+			children = (
+				18F594AA244F6291005716DC /* Media Library */,
+				18B60B71244AEEEE001284F3 /* Common */,
+				18B60B78244AEEEE001284F3 /* Services */,
+				18B60B74244AEEEE001284F3 /* Models */,
+				18B60B8A244AF1F2001284F3 /* Login */,
+				18B60B9A244B4414001284F3 /* Checklist */,
+				18B60B2B244AEC97001284F3 /* ZuperFormsSdk.h */,
+				18B60B8D244AF2FC001284F3 /* ZuperForm.swift */,
+				18B60B91244AF3DC001284F3 /* ZuperFormsViewModel.swift */,
+				18B60B8E244AF2FC001284F3 /* ZuperForm.xib */,
+				18B60B2C244AEC97001284F3 /* Info.plist */,
+				18129483245174AB00364C5A /* tick.gif */,
+				18129489245183AC00364C5A /* Layer 16.png */,
+				1834C1E4244E957E0057C90E /* Assets.xcassets */,
+			);
+			path = ZuperFormsSdk;
+			sourceTree = "<group>";
+		};
+		18B60B71244AEEEE001284F3 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				1834C1E1244E94600057C90E /* EmptyState */,
+				18B60B86244AEF16001284F3 /* Constants.swift */,
+				18B60B87244AEF16001284F3 /* Functions.swift */,
+				18B60B95244B019E001284F3 /* AlertView.swift */,
+				18B60B72244AEEEE001284F3 /* Extensions.swift */,
+				18B60B73244AEEEE001284F3 /* Srings.swift */,
+				188356D7244DC8320007911E /* FormDetails.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		18B60B74244AEEEE001284F3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				18B60B75244AEEEE001284F3 /* Checklist.swift */,
+				18B60B76244AEEEE001284F3 /* Login.swift */,
+				18B60B77244AEEEE001284F3 /* CompanyConfig.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		18B60B78244AEEEE001284F3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				18B60B93244AFBD3001284F3 /* Reachability.swift */,
+				18B60B79244AEEEE001284F3 /* Services.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		18B60B8A244AF1F2001284F3 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				18B60B82244AEF0B001284F3 /* LoginController.swift */,
+				18B60B80244AEF0B001284F3 /* LoginController.xib */,
+				18B60B81244AEF0B001284F3 /* LoginViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		18B60B9A244B4414001284F3 /* Checklist */ = {
+			isa = PBXGroup;
+			children = (
+				18B60BA1244B44A8001284F3 /* Controller */,
+				18B60B9C244B4467001284F3 /* View */,
+				18B60B9B244B4444001284F3 /* ViewModel */,
+			);
+			path = Checklist;
+			sourceTree = "<group>";
+		};
+		18B60B9B244B4444001284F3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				18B60B9F244B448F001284F3 /* SectionListViewModel.swift */,
+				180AA974244F174A0045C02E /* CheckListDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		18B60B9C244B4467001284F3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				186FEFCA244C40FA00FDF511 /* Cells */,
+				18B60BA4244B44D7001284F3 /* Checklist.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18B60BA1244B44A8001284F3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				186FEFCD244C431100FDF511 /* Cells */,
+				18B60BA2244B44BA001284F3 /* SectionListController.swift */,
+				181294852451754800364C5A /* SuccessController.swift */,
+				18527A0F244BFA39007344A1 /* ChecklistDetailController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		18F594AA244F6291005716DC /* Media Library */ = {
+			isa = PBXGroup;
+			children = (
+				18677D58244F6B41004EA35B /* ViewModel */,
+				18F594AD244F62BE005716DC /* Controller */,
+				18F594AC244F62B6005716DC /* Model */,
+				18F594AB244F62AA005716DC /* View */,
+			);
+			path = "Media Library";
+			sourceTree = "<group>";
+		};
+		18F594AB244F62AA005716DC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				18F594AE244F62E1005716DC /* MediaLibrary.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18F594AC244F62B6005716DC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				18F594B0244F6384005716DC /* AttachmentModel.swift */,
+				18F594B2244F63CF005716DC /* Library.swift */,
+				18F594B4244F660B005716DC /* LibraryFunctions.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18F594AD244F62BE005716DC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				18F594B6244F6862005716DC /* ImageMarkUpViewController.swift */,
+				18677D56244F6AC3004EA35B /* ImageCropperController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5E32C9AE0D85F880BF4F7BAA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6FDD823D90267768ED1C1D5F /* Pods_ZuperFormsSdk.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7C4CDC80B4CA2E2DC0ADA3BA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FA1EADC73ADC0C0928CFC8FA /* Pods-ZuperFormsSdk.debug.xcconfig */,
+				12201E62AB9BD365F6F5B12B /* Pods-ZuperFormsSdk.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		18B60B23244AEC97001284F3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18B60B2D244AEC97001284F3 /* ZuperFormsSdk.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		18B60B27244AEC97001284F3 /* ZuperFormsSdk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18B60B30244AEC97001284F3 /* Build configuration list for PBXNativeTarget "ZuperFormsSdk" */;
+			buildPhases = (
+				F7C2DFA6065C0AD18572BE30 /* [CP] Check Pods Manifest.lock */,
+				18B60B23244AEC97001284F3 /* Headers */,
+				18B60B24244AEC97001284F3 /* Sources */,
+				18B60B25244AEC97001284F3 /* Frameworks */,
+				18B60B26244AEC97001284F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZuperFormsSdk;
+			productName = ZuperFormsSdk;
+			productReference = 18B60B28244AEC97001284F3 /* ZuperFormsSdk.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18B60B1F244AEC97001284F3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = Zuper;
+				TargetAttributes = {
+					18B60B27244AEC97001284F3 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 18B60B22244AEC97001284F3 /* Build configuration list for PBXProject "ZuperFormsSdk" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18B60B1E244AEC97001284F3;
+			productRefGroup = 18B60B29244AEC97001284F3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18B60B27244AEC97001284F3 /* ZuperFormsSdk */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18B60B26244AEC97001284F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				186FEFD5244C443B00FDF511 /* RadioTypeCell.xib in Resources */,
+				18B60B90244AF2FC001284F3 /* ZuperForm.xib in Resources */,
+				18B60BA7244B44E6001284F3 /* SectionCell.xib in Resources */,
+				1812948A245183AC00364C5A /* Layer 16.png in Resources */,
+				186FEFDF244C451000FDF511 /* QuestionTypeCell.xib in Resources */,
+				18F594A6244EDED3005716DC /* ImageTypeCell.xib in Resources */,
+				1834C1E5244E957E0057C90E /* Assets.xcassets in Resources */,
+				18129484245174AB00364C5A /* tick.gif in Resources */,
+				18B60BA5244B44D7001284F3 /* Checklist.storyboard in Resources */,
+				186FEFD3244C441F00FDF511 /* MultilineCell.xib in Resources */,
+				18B60B83244AEF0B001284F3 /* LoginController.xib in Resources */,
+				186FEFDB244C44CB00FDF511 /* CheckBoxTypeCell.xib in Resources */,
+				186FEFCC244C418B00FDF511 /* SingleTextFieldCell.xib in Resources */,
+				18F594AF244F62E1005716DC /* MediaLibrary.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F7C2DFA6065C0AD18572BE30 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZuperFormsSdk-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18B60B24244AEC97001284F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				186FEFD9244C449400FDF511 /* CheckBoxTypeCell.swift in Sources */,
+				18B60B7A244AEEEE001284F3 /* Extensions.swift in Sources */,
+				186FEFCF244C435400FDF511 /* SingleTextFieldCell.swift in Sources */,
+				181294862451754800364C5A /* SuccessController.swift in Sources */,
+				18B60B8F244AF2FC001284F3 /* ZuperForm.swift in Sources */,
+				186FEFD7244C446300FDF511 /* RadioTypeCell.swift in Sources */,
+				18F594A8244EDF13005716DC /* ImageTypeCell.swift in Sources */,
+				18B60BA0244B448F001284F3 /* SectionListViewModel.swift in Sources */,
+				18F594B5244F660B005716DC /* LibraryFunctions.swift in Sources */,
+				18B60B7F244AEEEE001284F3 /* Services.swift in Sources */,
+				18B60B9E244B4474001284F3 /* SectionCell.swift in Sources */,
+				18F594B3244F63CF005716DC /* Library.swift in Sources */,
+				18B60B7B244AEEEE001284F3 /* Srings.swift in Sources */,
+				18B60B89244AEF16001284F3 /* Functions.swift in Sources */,
+				18B60BA3244B44BA001284F3 /* SectionListController.swift in Sources */,
+				186FEFD1244C43FF00FDF511 /* MultilineCell.swift in Sources */,
+				18B60B7E244AEEEE001284F3 /* CompanyConfig.swift in Sources */,
+				18F594B1244F6384005716DC /* AttachmentModel.swift in Sources */,
+				18B60B7C244AEEEE001284F3 /* Checklist.swift in Sources */,
+				188356D8244DC8320007911E /* FormDetails.swift in Sources */,
+				18F594B7244F6862005716DC /* ImageMarkUpViewController.swift in Sources */,
+				18B60B85244AEF0B001284F3 /* LoginController.swift in Sources */,
+				18B60B7D244AEEEE001284F3 /* Login.swift in Sources */,
+				18B60B96244B019E001284F3 /* AlertView.swift in Sources */,
+				18B60B92244AF3DC001284F3 /* ZuperFormsViewModel.swift in Sources */,
+				186FEFDD244C44F300FDF511 /* QuestionTypeCell.swift in Sources */,
+				18677D5A244F6B5E004EA35B /* ImageCropperViewModel.swift in Sources */,
+				18677D57244F6AC3004EA35B /* ImageCropperController.swift in Sources */,
+				180AA975244F174B0045C02E /* CheckListDetailViewModel.swift in Sources */,
+				18B60B84244AEF0B001284F3 /* LoginViewModel.swift in Sources */,
+				1834C1E3244E94600057C90E /* MainState.swift in Sources */,
+				18527A10244BFA39007344A1 /* ChecklistDetailController.swift in Sources */,
+				18B60B88244AEF16001284F3 /* Constants.swift in Sources */,
+				18B60B94244AFBD3001284F3 /* Reachability.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		18B60B2E244AEC97001284F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		18B60B2F244AEC97001284F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		18B60B31244AEC97001284F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA1EADC73ADC0C0928CFC8FA /* Pods-ZuperFormsSdk.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = HKFNV2JRF8;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ZuperFormsSdk/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zuper.ZuperFormsSdk;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		18B60B32244AEC97001284F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12201E62AB9BD365F6F5B12B /* Pods-ZuperFormsSdk.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = HKFNV2JRF8;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ZuperFormsSdk/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zuper.ZuperFormsSdk;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18B60B22244AEC97001284F3 /* Build configuration list for PBXProject "ZuperFormsSdk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18B60B2E244AEC97001284F3 /* Debug */,
+				18B60B2F244AEC97001284F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18B60B30244AEC97001284F3 /* Build configuration list for PBXNativeTarget "ZuperFormsSdk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18B60B31244AEC97001284F3 /* Debug */,
+				18B60B32244AEC97001284F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18B60B1F244AEC97001284F3 /* Project object */;
+}
