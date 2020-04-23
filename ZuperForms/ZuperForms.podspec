@@ -26,7 +26,7 @@ Pod::Spec.new do |spec|
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = "ZuperForms was built for the purpose of ensuring safety against COVID-19 by maintaining the proper checklist. The ZuperForms makes it quick and easy to build an excellent checklist module in your iOS app. We provide powerful and customizable UI screens and elements that can be used out-of-the-box to make it according to your app's theme."
 
-  spec.homepage     = "https://github.com/ZupersoftSolutions"
+  spec.homepage     = "https://github.com/ZupersoftSolutions/ZuperForms-iOS-sdk"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
