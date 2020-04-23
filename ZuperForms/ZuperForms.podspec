@@ -17,14 +17,14 @@ Pod::Spec.new do |spec|
 
   spec.name         = "ZuperForms"
   spec.version      = "1.0.0"
-  spec.summary      = "A short description of ZuperForms."
+  spec.summary      = "ZuperForms was built for the purpose of ensuring safety against COVID-19 by maintaining the proper checklist."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  spec.description  = ""
+  spec.description  = "ZuperForms was built for the purpose of ensuring safety against COVID-19 by maintaining the proper checklist. The ZuperForms makes it quick and easy to build an excellent checklist module in your iOS app. We provide powerful and customizable UI screens and elements that can be used out-of-the-box to make it according to your app's theme."
 
   spec.homepage     = "https://github.com/ZupersoftSolutions"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
@@ -79,7 +79,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "http://EXAMPLE/ZuperForms.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/ZupersoftSolutions/ZuperForms-iOS-sdk.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -90,7 +90,7 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "ZuperForms/**/*.{h,m,swift}"
+  spec.source_files  = "ZuperFormsSdk/ZuperFormsSdk/**/*.{h,m,swift}"
   spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
@@ -106,6 +106,7 @@ Pod::Spec.new do |spec|
 
   # spec.resource  = "icon.png"
   # spec.resources = "Resources/*.png"
+  #spec.resources = "ZuperFormsSdk/ZuperFormsSdk/Assets/*.xcassets"
 
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
 

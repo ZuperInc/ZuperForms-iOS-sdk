@@ -128,50 +128,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1834C1E1244E94600057C90E /* EmptyState */ = {
-			isa = PBXGroup;
-			children = (
-				1834C1E2244E94600057C90E /* MainState.swift */,
-			);
-			path = EmptyState;
-			sourceTree = "<group>";
-		};
-		18677D58244F6B41004EA35B /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				18677D59244F6B5E004EA35B /* ImageCropperViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		186FEFCA244C40FA00FDF511 /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				18B60BA6244B44E6001284F3 /* SectionCell.xib */,
-				186FEFCB244C418B00FDF511 /* SingleTextFieldCell.xib */,
-				186FEFD4244C443B00FDF511 /* RadioTypeCell.xib */,
-				186FEFD2244C441F00FDF511 /* MultilineCell.xib */,
-				186FEFDA244C44CB00FDF511 /* CheckBoxTypeCell.xib */,
-				186FEFDE244C451000FDF511 /* QuestionTypeCell.xib */,
-				18F594A5244EDED3005716DC /* ImageTypeCell.xib */,
-			);
-			path = Cells;
-			sourceTree = "<group>";
-		};
-		186FEFCD244C431100FDF511 /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				18B60B9D244B4474001284F3 /* SectionCell.swift */,
-				186FEFCE244C435400FDF511 /* SingleTextFieldCell.swift */,
-				186FEFD0244C43FF00FDF511 /* MultilineCell.swift */,
-				186FEFD6244C446300FDF511 /* RadioTypeCell.swift */,
-				186FEFD8244C449400FDF511 /* CheckBoxTypeCell.swift */,
-				186FEFDC244C44F300FDF511 /* QuestionTypeCell.swift */,
-				18F594A7244EDF13005716DC /* ImageTypeCell.swift */,
-			);
-			path = Cells;
-			sourceTree = "<group>";
-		};
 		18B60B1E244AEC97001284F3 = {
 			isa = PBXGroup;
 			children = (
@@ -193,12 +149,48 @@
 		18B60B2A244AEC97001284F3 /* ZuperFormsSdk */ = {
 			isa = PBXGroup;
 			children = (
-				18F594AA244F6291005716DC /* Media Library */,
-				18B60B71244AEEEE001284F3 /* Common */,
-				18B60B78244AEEEE001284F3 /* Services */,
-				18B60B74244AEEEE001284F3 /* Models */,
-				18B60B8A244AF1F2001284F3 /* Login */,
-				18B60B9A244B4414001284F3 /* Checklist */,
+				18677D59244F6B5E004EA35B /* ImageCropperViewModel.swift */,
+				18F594B6244F6862005716DC /* ImageMarkUpViewController.swift */,
+				18677D56244F6AC3004EA35B /* ImageCropperController.swift */,
+				18F594B0244F6384005716DC /* AttachmentModel.swift */,
+				18F594B2244F63CF005716DC /* Library.swift */,
+				18F594B4244F660B005716DC /* LibraryFunctions.swift */,
+				18F594AE244F62E1005716DC /* MediaLibrary.storyboard */,
+				1834C1E2244E94600057C90E /* MainState.swift */,
+				18B60B86244AEF16001284F3 /* Constants.swift */,
+				18B60B87244AEF16001284F3 /* Functions.swift */,
+				18B60B95244B019E001284F3 /* AlertView.swift */,
+				18B60B72244AEEEE001284F3 /* Extensions.swift */,
+				18B60B73244AEEEE001284F3 /* Srings.swift */,
+				188356D7244DC8320007911E /* FormDetails.swift */,
+				18B60B93244AFBD3001284F3 /* Reachability.swift */,
+				18B60B79244AEEEE001284F3 /* Services.swift */,
+				18B60B75244AEEEE001284F3 /* Checklist.swift */,
+				18B60B76244AEEEE001284F3 /* Login.swift */,
+				18B60B77244AEEEE001284F3 /* CompanyConfig.swift */,
+				18B60B82244AEF0B001284F3 /* LoginController.swift */,
+				18B60B80244AEF0B001284F3 /* LoginController.xib */,
+				18B60B81244AEF0B001284F3 /* LoginViewModel.swift */,
+				18B60B9D244B4474001284F3 /* SectionCell.swift */,
+				186FEFCE244C435400FDF511 /* SingleTextFieldCell.swift */,
+				186FEFD0244C43FF00FDF511 /* MultilineCell.swift */,
+				186FEFD6244C446300FDF511 /* RadioTypeCell.swift */,
+				186FEFD8244C449400FDF511 /* CheckBoxTypeCell.swift */,
+				186FEFDC244C44F300FDF511 /* QuestionTypeCell.swift */,
+				18F594A7244EDF13005716DC /* ImageTypeCell.swift */,
+				18B60BA2244B44BA001284F3 /* SectionListController.swift */,
+				181294852451754800364C5A /* SuccessController.swift */,
+				18527A0F244BFA39007344A1 /* ChecklistDetailController.swift */,
+				18B60BA6244B44E6001284F3 /* SectionCell.xib */,
+				186FEFCB244C418B00FDF511 /* SingleTextFieldCell.xib */,
+				186FEFD4244C443B00FDF511 /* RadioTypeCell.xib */,
+				186FEFD2244C441F00FDF511 /* MultilineCell.xib */,
+				186FEFDA244C44CB00FDF511 /* CheckBoxTypeCell.xib */,
+				186FEFDE244C451000FDF511 /* QuestionTypeCell.xib */,
+				18F594A5244EDED3005716DC /* ImageTypeCell.xib */,
+				18B60BA4244B44D7001284F3 /* Checklist.storyboard */,
+				18B60B9F244B448F001284F3 /* SectionListViewModel.swift */,
+				180AA974244F174A0045C02E /* CheckListDetailViewModel.swift */,
 				18B60B2B244AEC97001284F3 /* ZuperFormsSdk.h */,
 				18B60B8D244AF2FC001284F3 /* ZuperForm.swift */,
 				18B60B91244AF3DC001284F3 /* ZuperFormsViewModel.swift */,
@@ -209,126 +201,6 @@
 				1834C1E4244E957E0057C90E /* Assets.xcassets */,
 			);
 			path = ZuperFormsSdk;
-			sourceTree = "<group>";
-		};
-		18B60B71244AEEEE001284F3 /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				1834C1E1244E94600057C90E /* EmptyState */,
-				18B60B86244AEF16001284F3 /* Constants.swift */,
-				18B60B87244AEF16001284F3 /* Functions.swift */,
-				18B60B95244B019E001284F3 /* AlertView.swift */,
-				18B60B72244AEEEE001284F3 /* Extensions.swift */,
-				18B60B73244AEEEE001284F3 /* Srings.swift */,
-				188356D7244DC8320007911E /* FormDetails.swift */,
-			);
-			path = Common;
-			sourceTree = "<group>";
-		};
-		18B60B74244AEEEE001284F3 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				18B60B75244AEEEE001284F3 /* Checklist.swift */,
-				18B60B76244AEEEE001284F3 /* Login.swift */,
-				18B60B77244AEEEE001284F3 /* CompanyConfig.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		18B60B78244AEEEE001284F3 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				18B60B93244AFBD3001284F3 /* Reachability.swift */,
-				18B60B79244AEEEE001284F3 /* Services.swift */,
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
-		18B60B8A244AF1F2001284F3 /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				18B60B82244AEF0B001284F3 /* LoginController.swift */,
-				18B60B80244AEF0B001284F3 /* LoginController.xib */,
-				18B60B81244AEF0B001284F3 /* LoginViewModel.swift */,
-			);
-			path = Login;
-			sourceTree = "<group>";
-		};
-		18B60B9A244B4414001284F3 /* Checklist */ = {
-			isa = PBXGroup;
-			children = (
-				18B60BA1244B44A8001284F3 /* Controller */,
-				18B60B9C244B4467001284F3 /* View */,
-				18B60B9B244B4444001284F3 /* ViewModel */,
-			);
-			path = Checklist;
-			sourceTree = "<group>";
-		};
-		18B60B9B244B4444001284F3 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				18B60B9F244B448F001284F3 /* SectionListViewModel.swift */,
-				180AA974244F174A0045C02E /* CheckListDetailViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		18B60B9C244B4467001284F3 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				186FEFCA244C40FA00FDF511 /* Cells */,
-				18B60BA4244B44D7001284F3 /* Checklist.storyboard */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		18B60BA1244B44A8001284F3 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				186FEFCD244C431100FDF511 /* Cells */,
-				18B60BA2244B44BA001284F3 /* SectionListController.swift */,
-				181294852451754800364C5A /* SuccessController.swift */,
-				18527A0F244BFA39007344A1 /* ChecklistDetailController.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		18F594AA244F6291005716DC /* Media Library */ = {
-			isa = PBXGroup;
-			children = (
-				18677D58244F6B41004EA35B /* ViewModel */,
-				18F594AD244F62BE005716DC /* Controller */,
-				18F594AC244F62B6005716DC /* Model */,
-				18F594AB244F62AA005716DC /* View */,
-			);
-			path = "Media Library";
-			sourceTree = "<group>";
-		};
-		18F594AB244F62AA005716DC /* View */ = {
-			isa = PBXGroup;
-			children = (
-				18F594AE244F62E1005716DC /* MediaLibrary.storyboard */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		18F594AC244F62B6005716DC /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				18F594B0244F6384005716DC /* AttachmentModel.swift */,
-				18F594B2244F63CF005716DC /* Library.swift */,
-				18F594B4244F660B005716DC /* LibraryFunctions.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		18F594AD244F62BE005716DC /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				18F594B6244F6862005716DC /* ImageMarkUpViewController.swift */,
-				18677D56244F6AC3004EA35B /* ImageCropperController.swift */,
-			);
-			path = Controller;
 			sourceTree = "<group>";
 		};
 		5E32C9AE0D85F880BF4F7BAA /* Frameworks */ = {
