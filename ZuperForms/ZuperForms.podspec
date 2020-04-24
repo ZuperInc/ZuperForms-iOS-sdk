@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "ZuperForms"
-  spec.version      = "1.0.2"
+  spec.version      = "1.0.3"
   spec.summary      = "ZuperForms was built for the purpose of ensuring safety against COVID-19 by maintaining the proper checklist."
 
   # This description is used to generate tags and improve search results.
@@ -107,6 +107,7 @@ Pod::Spec.new do |spec|
   # spec.resource  = "icon.png"
   # spec.resources = "Resources/*.png"
   #spec.resources = "ZuperFormsSdk/ZuperFormsSdk/Assets/*.xcassets"
+  spec.resources = 'ZuperFormsSdk/**/*.{png,storyboard,xib,xcassets,gif}'
 
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
